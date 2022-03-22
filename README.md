@@ -1,6 +1,6 @@
 # Dialogue Summaries as Dialogue States (DS2)
 
-**Updates:** We release the [T5 models](https://huggingface.co/jaynlp/t5-large-samsum.) as anonymity period is over.
+**Updates:** We release the [T5 models](https://huggingface.co/jaynlp/t5-large-samsum) as anonymity period is over.
 
 Paper link: https://arxiv.org/abs/2203.01552
 
