@@ -15,14 +15,14 @@ Paper link: https://arxiv.org/abs/2203.01552
 ```
 
 ## How to use the code
-0. Installing the directory as pip will resolve all path issues
+0. **Installing the directory as pip will resolve all path issues**
+
 ```bash
 pip install -e .
 pip install -r requirements.txt # requires python 3.8
 ```
 
-**1. Get MWOZ data (for 2.0 change all 2.1 to 2.0)
-**
+1. **Get MWOZ data (for 2.0 change all 2.1 to 2.0)**
 
 For 2.0
 ```bash
@@ -34,8 +34,7 @@ For 2.1
 python scripts/create_data_mwoz.py --mwz_ver=2.1 --main_dir=data_mwoz_2.1 --target_path=data_mwoz_2.1/mwz
 ```
 
-**2. Training and Inference - Cross-domain 
-**
+2. **Training and Inference - Cross-domain**
 
 **Pre-training**
 
@@ -87,8 +86,7 @@ CUDA_VISIBLE_DEVICES={gpu} python ds2/scripts/train_ds2.py \
     --version=2.1
 ```
 
-**3. Training and Inference - Multi-domain
-**
+3. **Training and Inference - Multi-domain**
 
 ```bash
 CUDA_VISIBLE_DEVICES={gpu} python ds2/scripts/train_ds2.py \
@@ -109,8 +107,7 @@ CUDA_VISIBLE_DEVICES={gpu} python ds2/scripts/train_ds2.py \
     --version=2.1
 ```
 
-**4. Training and Inference - Cross-task
-**
+4. **Training and Inference - Cross-task**
 
 ```bash
 CUDA_VISIBLE_DEVICES={gpu} python ds2/scripts/train_ds2.py \
