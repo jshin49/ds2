@@ -1,5 +1,20 @@
 # Dialogue Summaries as Dialogue States (DS2)
 
+**Updates:** We release the T5 models as anonymity period is over.
+
+Paper link: https://arxiv.org/abs/2203.01552
+
+### Citation
+```
+@article{shin2022dialogue,
+  title={Dialogue Summaries as Dialogue States (DS2), Template-Guided Summarization for Few-shot Dialogue State Tracking},
+  author={Shin, Jamin and Yu, Hangyeol and Moon, Hyeongdon and Madotto, Andrea and Park, Juneyoung},
+  journal={arXiv preprint arXiv:2203.01552},
+  year={2022}
+}
+```
+
+## How to use the code
 0. Installing the directory as pip will resolve all path issues
 ```bash
 pip install -e .
@@ -23,7 +38,7 @@ python scripts/create_data_mwoz.py --mwz_ver=2.1 --main_dir=data_mwoz_2.1 --targ
 
 ~~Example using T5 on Cross-domain pre-training. Note that this code will not work yet because we did not release our pretrained model checkpoints yet due to anonymity issues. We will release the checkpoints upon de-anonymization of the paper. Hence, we recommend using the following options to check our code.~~
 
-We have uploaded the T5 pre-trained on Dialogue Summarization model on HuggingFace Model Hub at https://huggingface.co/jaynlp/t5-large-samsum. Now you can choose between
+We have uploaded the T5 pre-trained on Dialogue Summarization model on HuggingFace Model Hub at https://huggingface.co/jaynlp/t5-large-samsum. Now you can choose between BART and T5 as such:
 - `model_name=bart` and `model_checkpoint=Salesforce/bart-large-xsum-samsum` 
 - `model_name=t5` and `model_checkpoint=jaynlp/t5-large-samsum` 
 
