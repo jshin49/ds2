@@ -20,8 +20,12 @@ python scripts/create_data_mwoz.py --mwz_ver=2.1 --main_dir=data_mwoz_2.1 --targ
 
 2. Training and Inference - Cross-domain 
 **Pre-training**
-Example using T5 on Cross-domain pre-training. Note that this code will not work yet because we did not release our pretrained model checkpoints yet due to anonymity issues. We will release the checkpoints upon de-anonymization of the paper. Hence, we recommend using the following options to check our code.
+
+~~Example using T5 on Cross-domain pre-training. Note that this code will not work yet because we did not release our pretrained model checkpoints yet due to anonymity issues. We will release the checkpoints upon de-anonymization of the paper. Hence, we recommend using the following options to check our code.~~
+
+We have uploaded the T5 pre-trained on Dialogue Summarization model on HuggingFace Model Hub at https://huggingface.co/jaynlp/t5-large-samsum. Now you can choose between
 - `model_name=bart` and `model_checkpoint=Salesforce/bart-large-xsum-samsum` 
+- `model_name=t5` and `model_checkpoint=jaynlp/t5-large-samsum` 
 
 ```bash
 CUDA_VISIBLE_DEVICES={gpu} python ds2/scripts/train_ds2.py \
