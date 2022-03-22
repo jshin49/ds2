@@ -23,6 +23,7 @@ pip install -r requirements.txt # requires python 3.8
 
 **1. Get MWOZ data (for 2.0 change all 2.1 to 2.0)
 **
+
 For 2.0
 ```bash
 python scripts/create_data_mwoz.py --mwz_ver=2.0 --main_dir=data_mwoz_2.0 --target_path=data_mwoz_2.0/mwz
@@ -35,6 +36,7 @@ python scripts/create_data_mwoz.py --mwz_ver=2.1 --main_dir=data_mwoz_2.1 --targ
 
 **2. Training and Inference - Cross-domain 
 **
+
 **Pre-training**
 
 ~~Example using T5 on Cross-domain pre-training. Note that this code will not work yet because we did not release our pretrained model checkpoints yet due to anonymity issues. We will release the checkpoints upon de-anonymization of the paper. Hence, we recommend using the following options to check our code.~~
